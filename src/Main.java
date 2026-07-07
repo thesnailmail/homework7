@@ -75,6 +75,7 @@ public class Main {
         }
         //Задание 3
         System.out.println("Задача 3");
+        System.out.println("while");
         int initialBudget = 1000;
         int budget = initialBudget;
         int days = 1;
@@ -88,6 +89,18 @@ public class Main {
                 break;
             }
             days++;
+        }
+        System.out.println("Бюджета " + initialBudget + " хватит на " + days + " дней.");
+        System.out.println("for");
+        budget = initialBudget;
+        for (int i = 0; budget > 0; i++) {
+            if (i % 5 == 0) {
+                continue;
+            }
+            budget -= 100;
+            if (budget == 0) {
+                break;
+            }
         }
         System.out.println("Бюджета " + initialBudget + " хватит на " + days + " дней.");
         //Задание 4
